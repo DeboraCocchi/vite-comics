@@ -1,0 +1,29 @@
+@use './partials/variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgb(12,12,12);
+  color:white;
+}
+
+img{
+  max-width:100%;
+}
+
+.container{
+  width:65%;
+  margin:0 auto;
+}
+
+.d-flex{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
