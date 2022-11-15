@@ -6,26 +6,30 @@ export default {
       ctaObjects:[
         {
           text:'DIGITAL COMICS',
-          imgName: 'digital-comics.png'
+          imgName: 'comics-digital-comics.png'
         },
         {
           text:'DC MERCHANDISE',
-          imgName: 'merchandise.png'
+          imgName: 'comics-merchandise.png'
         },
         {
           text:'SUBSCRIPTION',
-          imgName: 'subscriptions.png'
+          imgName: 'comics-subscriptions.png'
         },
         {
           text:'COMIC SHOP LOCATOR',
-          imgName: 'shop-locator.png'
-        }
+          imgName: 'comics-shop-locator.png'
+        },
+        {
+          text:'DC POWER VISA',
+          imgName: 'dc-power-visa.svg'
+        },
       ]
     }
   },
   methods:{
     getImgPath(img){
-      return new URL(`../assets/buy-comics-${img}`,import.meta.url).href
+      return new URL(`../assets/buy-${img}`,import.meta.url).href
     }
   }
 }
@@ -67,6 +71,9 @@ export default {
           img{
             height:60px;
           }
+          img:last-of-type{
+              height:45px;
+            }
           span{
             font-weight: 300;
             font-size:90%;

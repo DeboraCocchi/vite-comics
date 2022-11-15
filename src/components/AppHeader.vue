@@ -8,7 +8,7 @@ export default {
   <header>
     <div class="container d-flex">
       <div class="logo">
-        <img src="/dc-logo.png" alt="DC Logo">
+        <a href="#"><img src="/dc-logo.png" alt="DC Logo"></a>
       </div>
       <nav>
         <ul class="d-flex">
@@ -37,7 +37,6 @@ export default {
   header{
     background-color: white;
     height:85px;
-    margin-top:30px;
     .logo{
       padding:8px;
       height:85px;
@@ -64,9 +63,8 @@ export default {
           text-decoration: none;
           color:$primary-grey;
           text-transform: uppercase;
-          font-size:75%;
+          font-size:80%;
           font-weight: bold;
-          
          }
       }
       
