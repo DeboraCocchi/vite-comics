@@ -86,12 +86,12 @@ export default {
     min-height: 400px;
     background-size: cover;
       .container{
-        padding:40px 0 80px;
         display:flex;
         justify-content: space-between;
         .cols{
           display:flex;
           align-items:flex-start;
+          padding:20px 0;
         }
         .col{
           width:140px;
@@ -122,7 +122,7 @@ export default {
       background-size: cover;
       position:relative;
       top:-35px;
-      right:0;
+      right:8px;
     }
     }
   }

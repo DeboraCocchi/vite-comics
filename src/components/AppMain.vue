@@ -33,6 +33,7 @@ export default {
   @use '../style/partials/mixin' as *;
   main{
     background-color: $primary-black;
+    padding-bottom:20px;
     .jumbo{
     width:100%;
     height:400px;
@@ -51,7 +52,8 @@ export default {
     .container{
       display: flex;
       flex-wrap: wrap;
-      margin:30px auto;
+      padding:50px auto;
+      background-color: $primary-black;
       
   }
   }

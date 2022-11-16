@@ -41,7 +41,7 @@ export default {
  
         <ul class="d-flex">
           <li v-for="(ctaObject,index) in ctaObjects" :key="index">
-            <img :src="getImgPath(ctaObject.imgName)" :alt="ctaObject.imgName"><span>{{ctaObject.text}}</span>
+            <img :src="getImgPath(ctaObject.imgName)" :alt="ctaObject.imgName"><a href="#">{{ctaObject.text}}</a>
           </li>
         </ul>
     
@@ -56,6 +56,7 @@ export default {
 
   .cta-strip{
     background-color: $primary-blue;
+
     height:150px;
     width:100%;
     .container{
@@ -70,12 +71,17 @@ export default {
         li{
           display:flex;
           align-items: center;
-          margin:10px;          
+          margin:10px;  
+          &:hover{
+            cursor:pointer;
+          }        
           img{
             height:55px;
           }
-          span{
+          a{
             font-weight: 300;
+            text-decoration: none;
+            color:white;
             font-size:90%;
             margin-left:10px;
             margin-right:10px;
