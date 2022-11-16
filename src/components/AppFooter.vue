@@ -51,7 +51,7 @@ export default {
             <li><a href="#">DC Power Visa</a></li>
           </ul>
         </div>
-       <div class="big-logo"></div>
+        <div class="big-logo"></div>
       </div>
       
     </div>
@@ -80,10 +80,12 @@ export default {
 
   .top{
     background-image: url('../assets/footer-bg.jpg');
-    min-height: 360px;
+    min-height: 400px;
     background-size: cover;
+    overflow-y: scroll;
       .container{
-        padding-top:40px;
+        position:relative;
+        padding:40px 0 80px;
         display:flex;
         align-items:flex-start;
         .col{
@@ -110,18 +112,18 @@ export default {
     .big-logo{
       background-image: url('../assets/dc-logo-bg.png');
       opacity:0.7;
-      width:400px;
-      height:400px;
+      width:450px;
+      height:450px;
       background-size: cover;
-      position:relative;
-      top:-80px;
-      right:-250px;
+      position:absolute;
+      top:-38px;
+      right:0;
       display:inline;
     }
     }
   }
   .bottom{
-    height:110px;
+    height:100px;
     width:100%;
     background-color:$primary-grey;
     position:fixed;

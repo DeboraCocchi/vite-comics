@@ -64,16 +64,16 @@ export default {
       ul{
         height:100%;
         width:100%;
+        & > li:last-of-type img{
+          height:45px;
+        }
         li{
           display:flex;
           align-items: center;
-          margin:10px;
+          margin:10px;          
           img{
-            height:60px;
+            height:55px;
           }
-          img:last-of-type{
-              height:45px;
-            }
           span{
             font-weight: 300;
             font-size:90%;
