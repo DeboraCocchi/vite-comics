@@ -18,9 +18,11 @@ export default {
 <template>
 <main>
   <div class="jumbo"></div>
-  <h2>CURRENT SERIES</h2>
+  
   <div class="container d-flex">
+    <div class="title"><h2>CURRENT SERIES</h2></div>
     <AppThumb v-for="(product, index) in products" :key="index" :comic="product"/>
+    <div class="btn-load"><button>Load More</button></div>
   </div>
 
 </main>
@@ -39,7 +41,10 @@ export default {
     height:400px;
     background-image: url('../assets/jumbotron.jpg');
     }
-    h2{
+    .title{
+      margin:0 auto;
+      width:100%;
+      h2{
         font-size:1.5rem;
         display:inline-block;
         padding:8px 12px;
@@ -47,14 +52,29 @@ export default {
         text-align:center;
         position:relative;
         top:-22px;
-        left:248px;
     }
+    }
+    
     .container{
       display: flex;
       flex-wrap: wrap;
       padding:50px auto;
       background-color: $primary-black;
-      
+      .btn-load{
+        margin:0 auto;
+        margin-top:20px;
+        button{
+          background-color: $primary-blue;
+          text-transform: uppercase;
+          padding:5px 8px;
+          font-size:90%;
+          color:white;
+          border:none;
+          &:hover{
+            cursor:pointer;
+          }
+        }
+      }
   }
   }
   
